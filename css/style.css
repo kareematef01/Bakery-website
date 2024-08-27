@@ -1,0 +1,450 @@
+* {
+    font-family: "Alegreya", serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+   scroll-padding-top: 60px;
+}
+
+.header {
+
+    background-image: url(../images/drew-coffman-1872.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 115vh;
+    overflow: hidden;
+    position: relative;
+}
+.opa{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color:rgba(0 , 0, 0 ,0.3);
+}
+
+.home {
+    position: absolute;    
+    text-align: center;
+    color: white;
+    margin-top: 15%;
+    right: 0;
+    left: 0;
+}
+
+.contaner-nav {
+    
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    overflow: auto;
+    transition: 0.7s ease;
+}
+
+.contaner-nav:hover {
+    background-color: rgb(142, 119, 84);
+}
+
+.navbar {
+    width: 80%;
+    margin: auto;
+}
+
+.nav-logo {
+    margin-top: 10px;
+    width: 15%;
+    float: left;
+}
+
+.nav-logo img {
+    width: 100%;
+}
+
+.nav-link {
+    margin-top: 10px;
+    float: right;
+}
+
+
+.nav-link ul li {
+    list-style-type: none;
+    float: left;
+    padding: 15px;
+}
+
+.nav-link ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.7s ease;
+}
+
+.nav-link a:hover {
+    color: rgb(184, 175, 159);
+    font-size: 22.2px;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.home p {
+    font-size: 23px;
+    padding-top: 10px;
+}
+
+.home h1 {
+    font-size: 75px;
+    font-weight: 100;
+    margin: 20px 0;
+}
+
+.home .btn {
+    font-size: 100;
+    padding: 15px 28px;
+    color: white;
+    margin: 20px 5px;
+    border-radius: 5px;
+    transition: 0.7s ease;
+}
+
+.btn1 {
+    background-color: rgb(142, 119, 84);
+    border: 2px solid transparent;
+}
+
+.btn2 {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+.scroll {
+    width: 35px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 40%;
+    margin: auto;
+    position: relative;
+    margin-top: 50px;
+    transition: 0.8s ease;
+}
+
+.scroll-child {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    ;
+    margin: 0 11px;
+    transition: 0.8s ease;
+}
+
+.scroll:hover .scroll-child {
+    background-color: white;
+    top: 18px;
+}
+
+/* </home> */
+
+/* <about> */
+.about {
+
+    width: 100%;
+    height: 100vh;
+    color: #686868;
+
+}
+
+.about .contaner {
+
+    width: 85%;
+    margin: auto;
+    padding: 50px 0;
+    margin-right: 50px;
+}
+
+.about-image {
+
+    width: 42%;
+    float: left;
+    display: flex;
+    padding-top: 50px;
+}
+
+.about-image img {
+    width: 100%;
+
+}
+
+.about-cap {
+    margin-left: 6%;
+    width: 40%;
+    float: left;
+}
+
+.about-cap h2 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 50px 0;
+    color: black;
+    margin-top: 30px;
+}
+
+.about-cap p {
+    padding-bottom: 35px;
+    line-height: 1.86em;
+    font-size: 18px;
+}
+
+.about-cap-icons ul li {
+    font-size: 18px;
+    line-height: 2.8em;
+}
+
+/* </about> */
+/* <offer> */
+.offer {
+    width: 100%;
+    height: 95vh;
+    color: #686868;
+    background-color: #f8f8f8;
+}
+
+.contaner-offer {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+    margin-right: 18px;
+}
+
+.offer-cap {
+    width: 40%;
+    float: left;
+    margin-top: 50px;
+    text-align: left;
+    margin-right: 50px;
+    padding-top: 30px;
+}
+
+.offer-cap h2 {
+    padding: 40px 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: black;
+}
+
+.offer-cap p {
+    padding: 10px 0;
+    line-height: 1.86em;
+    font-size: 18px;
+}
+
+.offer-image {
+    width: 40%;
+    padding-top: 50px;
+    float: left;
+    display: flex;
+    margin-left: 50px;
+
+
+}
+
+.offer-image img {
+    width: 100%;
+}
+
+/* </offer> */
+
+.gallary {
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+
+}
+
+.gallary p {
+    line-height: 1.86em;
+    font-size: 17px;
+    color: #686868;
+}
+
+.gallary-contaner {
+    width: 90%;
+    margin: auto;
+}
+
+.gallary-cap {
+    padding: 50px 0 30px 0;
+}
+
+.gallary-cap h2 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+
+.gallary-image {
+    width: 33.33%;
+    text-align: center;
+    margin: auto;
+    float: left;
+    padding: 50px;
+}
+
+.gallary-image p {
+    padding-top: 10px;
+
+}
+
+.gallary-image span {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.gallary-image img {
+    width: 100%;
+}
+
+/* </gallary> */
+
+/* <blog> */
+.blog {
+    width: 100%;
+    height: 90vh;
+    color: #686868;
+    background-color: #f8f8f8;
+}
+
+.blog p,
+li {
+    font-size: 17px;
+    line-height: 1.86em;
+}
+
+.blog li {
+    line-height: 3em;
+    padding-left: 10px;
+}
+
+.contaner-blog {
+    width: 90%;
+    margin: auto;
+    margin-right: 18px;
+}
+
+.blog-cap {
+    width: 45%;
+    float: left;
+    text-align: left;
+}
+
+.blog-cap h2 {
+    font-size: 1.6rem;
+    font-weight: 100;
+    margin: 40px 0;
+    color: black;
+}
+
+.blog-cap-icon p {
+    margin: 15px 0;
+}
+
+.blog-image {
+    width: 42%;
+    float: left;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+    padding-left: 50px;
+}
+
+/* </blog> */
+
+/* <contact> */
+
+.contact {
+    background-color: #353330;
+    color: #686868;
+    height: 90vh;
+}
+
+.contact p,
+li {
+    line-height: 1.86em;
+    font-size: 16px;
+}
+
+.contact li {
+    border-bottom: rgb(104, 104, 104, 0.5) 1px solid;
+    padding: 10px 0;
+}
+.contact .no-border{
+    border: none;
+}
+
+.contact h4 {
+    color: white;
+    font-weight: 100;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.contact .contaner {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.contact-about {
+    padding: 30px;
+    width: 23%;
+    float: left;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.contact-about p {
+    padding-bottom: 10px;
+}
+
+.contact-item {
+    padding: 30px;
+    width: 23%;
+    float: left;
+    text-align: left;
+}
+
+.contact-details {
+    padding: 30px;
+    width: 23%;
+    float: left;
+    text-align: left;
+    background-image: url(../images/contact-details-map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    margin-top: 30px;
+}
+
+/* </end footer>  */
+
+
